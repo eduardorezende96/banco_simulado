@@ -1,6 +1,8 @@
 # banco_simulado
 Simulador de um banco
-* Autor:Eduardo Domingues Malta de Rezende
+
+## Autor: 
+Eduardo Domingues Malta de Rezende
 
 # Como rodar
 Para rodar o programa, primeiramente é necessário instalar o django. Após isso, algumas extensões também são necessárias, como o django crispy forms, que pode ser instalado através de pip install 'pip install django-crispy-forms'. Além disso, também são necessárias as intalações das bibliotecas xhtml2pdf, que pode ser instalado através de 'pip install xhtml2pdf', e beatiful soup, instalável através de 'pip install BeautifulSoup 4'. Isso realizado, primeiramente é necessário realizar as migrações dos bancos de dado. Para isso, basta entrar na pasta principal e rodar 'python manage.py makemigrations', e em seguida 'python manage.py migrate'. Com isso realizado, basta rodar o servidor, através do comando 'python manage.py runserver'. Com isso, basta copiar o link indicado no terminal, e abri-lo em um browser, que a aplicação estará disponível.
