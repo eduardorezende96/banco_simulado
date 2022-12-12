@@ -1,0 +1,25 @@
+{% extends "main/base.html" %}
+
+{% block title %}
+    Visualisar Lista
+{% endblock %}
+
+{% block content %}
+<h3> {{ls.name}} </h3>
+<form method="post" action="#">
+    {% csrf_token %}
+
+    <div class="input-group gap-2 mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="">R$</span>
+        </div>
+        <div class="col-2">
+            <input type="text" name="new" class="form-control">
+        </div>  
+        <div class="d-grid gap-2 d-md-block">
+            <button type="submit" class="btn btn-primary btn" name="newMove", value="newMove">Depositar</button>
+            <button type="submit" class="btn btn-danger btn" name="newMove2" value="newMove2">Sacar</button>
+        </div>
+    </div>
+</form>
+{% endblock %}

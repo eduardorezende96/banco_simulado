@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<h1>Página Inicial</h1>
+
+<body>
+    {% if request.user.is_authenticated %}
+        <p>Bem vindo, {{usuario}}!</p>
+        <div class="input-group-prepend">
+            <a class="btn btn-primary" href="logout" role="button">Logout</a>
+        </div>
+    {% else %}
+        <div class="input-group gap-2 mb-3">
+            <div class="input-group-prepend">
+                <a class="btn btn-primary" href="register" role="button">Cadastrar</a>
+                <a class="btn btn-primary" href="login" role="button">Entrar</a>
+            </div>
+        </div>
+    {% endif %}
+</body>
+{% endblock %}
